@@ -136,29 +136,53 @@
             </div>
             <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="contact-form">
-                    <div id="success"></div>
-                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                        <div class="control-group">
-                            <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div>
-                            <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
-                        </div>
-                    </form>
-                </div>
+<!---->
+<!-- START HERE -->
+
+
+  <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+  action="https://script.google.com/macros/s/AKfycbwzMtl0Q6FM8GVXK78UPcy-o3uhs86SgU129V9BU1rPBAlgDVyt2vQO5fOgLnYdlE5C/exec">
+    <!-- change the form action to your script url -->
+
+    <div class="control-group">
+      <fieldset>
+        <label for="name">Name: </label>
+        <input class="form-control" id="name" name="name" placeholder="Enter Your Name" />
+      </fieldset>
+
+      <fieldset>
+        <label for="subject"><em>Your</em> Subject:</label>
+        <input class="form-control" id="subject" name="subject" type="text" value=""
+        required placeholder="Subject"/>
+      </fieldset>
+
+      <fieldset>
+        <label for="message">Message: </label>
+        <textarea class="form-control" id="message" name="message" rows="10"
+        placeholder="Yor Message..."></textarea>
+      </fieldset>
+
+      <fieldset>
+        <label for="email"><em>Your</em> Email Address:</label>
+        <input class="form-control" id="email" name="email" type="email" value=""
+        required placeholder="example@email.com"/>
+      </fieldset>
+        <br>
+      <button class="btn" >
+        Send Message</button>
+    </div>
+
+    <!-- Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;">
+      <h2>Thanks for contacting us!
+        We will get back to you soon!</h2>
+    </div>
+
+  </form>
+
+<!-- END -->
+               <!---->
+         
             </div>
         </div>
     </div>
@@ -217,5 +241,9 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="form-submission-handler.js"></script>
     </body>
 </html>
