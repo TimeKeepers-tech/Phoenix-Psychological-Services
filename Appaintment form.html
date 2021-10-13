@@ -2,85 +2,120 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
 
-	<title>Phoenix Psychological Services</title>
-	<!-- Favicon -->
-        <link href="img/favicon.png" rel="icon">
+    <!-- Title Page-->
+    <title>Phoenix Psychological Services</title>
 
-	<!-- Google font -->
-	<link href="https://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet">
+    <!-- Icons font CSS-->
+    <link href="colorlib-booking-12/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="colorlib-booking-12/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-	<!-- Bootstrap -->
-	<link type="text/css" rel="stylesheet" href="colorlib-booking-12/css/bootstrap.min.css" />
+    <!-- Vendor CSS-->
+    <link href="colorlib-booking-12/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="colorlib-booking-12/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
 
-	<!-- Custom stlylesheet -->
-	<link type="text/css" rel="stylesheet" href="colorlib-booking-12/css/style.css" />
-
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
-
+    <!-- Main CSS-->
+    <link href="colorlib-booking-12/css/main.css" rel="stylesheet" media="all">
 </head>
 
 <body>
-	<div id="booking" class="section">
-		<div class="section-center">
-			<div class="container">
-				<div class="row">
-					<div class="booking-form">
-						<div class="booking-bg"></div>
-						<form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
-  action="https://script.google.com/macros/s/AKfycbxo9Q3FmPrjrdYnF05n6hVOiKONLbFxu-csykXhEaDxjVuH0dMK3Ihpku7Gnkkziym3ag/exec">
-							<div class="form-header">
-								<h2>Make your appointment</h2>
-							</div>
-							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-										<span class="form-label">Date</span>
-										<input class="form-control" type="date" name="date" id="date" required>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<span class="form-label">Time</span>
-										<input class="form-control" type="time" placeholder="Enter Time" name="time" id="Period">
-									</div>
-								</div>
-							</div>
-							<div class="form-group">
-								<!-- <span class="form-label">Email<br></span> -->
-								<input class="form-control" type="email" placeholder="Enter your email" name="email" id="email" >
-							</div>
-							<div class="form-group">
-								<span class="form-label">Phone</span>
-								<input class="form-control" type="tel" placeholder="Enter your phone number" name="phone" id="phone">
-							</div>
-							<div class="form-btn">
-								<button class="submit-btn">Book Now</button>
-							</div>
-							 <!-- Thankyou Message People See when they submit the form: -->
-    <div class="thankyou_message" style="display:none;">
-      <h2>Thanks for contacting us!
-        We will get back to you soon!</h2>
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">Make Your Appointment</h2>
+                    <form method="POST">
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">first name</label>
+                                    <input class="input--style-4" type="text" name="first_name">
+                                </div>
+                            </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Date</label>
+                                    <div class="input-group-icon">
+                                        <input class="input--style-4 js-datepicker" type="text" name="Date">
+                                        <!-- <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Email</label>
+                                    <input class="input--style-4" type="email" name="email">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Phone Number</label>
+                                    <input class="input--style-4" type="text" name="phone">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label class="label">Subject</label>
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="subject">
+                                    <option disabled="disabled" selected="selected">Choose option</option>
+                                    <option>10:00Am - 11:00Am</option>
+                                    <option>11:00AM - 12:00Pm</option>
+                                    <option>12:00Pm - 1:00Pm</option>
+                                    <option>1:00Pm - 2:00Pm</option>
+                                    <option>2:00Pm - 3:00Pm</option>
+                                    <option>3:00Pm - 4:00Pm</option>
+                                    <option>4:00Pm - 5:00Pm</option>
+                                    <option>5:00Pm - 6:00Pm</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                                <div class="input-group">
+                                   <!--  <label class="label">Gender</label> -->
+                                    <div class="p-t-10">
+                                        <label class="radio-container m-r-45">I Agree to Call Me Using this Credentials
+                                            <input type="radio" checked="checked" name="gender">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">I Disgree to Call Me Using this Credentials
+                                            <input type="radio" name="gender">
+                                            <span class="checkmark"></span>
+                                        </label>
+                        </div>
+                        <div class="p-t-15">
+                            <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-						</form>
-						
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	 <!-- Submit the Form to Google Using "AJAX" -->
-  <script data-cfasync="false" type="text/javascript"
-  src="form-submission-handler.js"></script>
-</body>
+
+    <!-- Jquery JS-->
+    <script src="colorlib-booking-12/vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="colorlib-booking-12/vendor/select2/select2.min.js"></script>
+    <script src="colorlib-booking-12/vendor/datepicker/moment.min.js"></script>
+    <script src="colorlib-booking-12/vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="colorlib-booking-12/js/global.js"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 
 </html>
+<!-- end document-->
