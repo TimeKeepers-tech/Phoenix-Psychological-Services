@@ -1,127 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Required meta tags-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.8, shrink-to-fit=yes">
-    <!-- <meta content="width=device-width, initial-scale=0.8" name="viewport"> -->
-    <!-- Title Page-->
-    <title>Phoenix Psychological Services</title>
-    
-    <!-- Icons font CSS-->
-    <link href="colorlib-booking-12/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
-    <link href="colorlib-booking-12/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
-    <!-- Font special for pages-->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    
-    <!-- Vendor CSS-->
-    <link href="colorlib-booking-12/vendor/select2/select2.min.css" rel="stylesheet" media="all">
-    <link href="colorlib-booking-12/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
-    
-    <!-- Main CSS-->
-    <link href="colorlib-booking-12/css/main.css" rel="stylesheet" media="all">
+	<meta charset="utf-8">
+	<title>Phoenix Psychological Services</title>
+	<meta content="width=device-width, initial-scale=0.8" name="viewport">
+	<meta content="" name="keywords">
+	<meta content="" name="description">
+
+
+	<!-- Favicon -->
+	<link href="img/favicon.png" rel="icon">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+	<!-- CSS Libraries -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+	<link href="lib/animate/animate.min.css" rel="stylesheet">
+	<link href="lib/flaticon/font/flaticon.css" rel="stylesheet"> 
+	<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+	<link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+	<!-- Template Stylesheet -->
+	<link href="css/style.css" rel="stylesheet">
 </head>
 
-<body style="position:relative;">
-    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
-        <div class="wrapper wrapper--w680">
-            <div class="card card-4">
-                <div class="card-body">
-                    <h2 class="title">Make Your Appointment</h2>
-                    <form  class="gform pure-form pure-form-stacked"  method="POST" action="https://script.google.com/macros/s/AKfycbxtNBKQVTtLBxpp5ReU1Q9a7B7jTCTvxgI_9w3jwWeqlSXXCGu0wfxC8Ri2uhewexLNMw/exec">
-                        <div class="row row-space">
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <!-- <label class="label">Name: </label> -->
-                                    <input class="input--style-4" type="text" name="name" id="name" placeholder="Name : ">
-                                </div>
-                            </div>
-                            <div class="row row-space">
-                                <div class="col-2">
-                                    <div class="input-group">
-                                        <!-- <label class="label">Date: </label> -->
-                                        <div class="input-group-icon">
-                                            <input class="input--style-4 js-datepicker" type="text" name="date" id="date" placeholder="Date : ">
-                                            <!-- <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row row-space">
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <!-- <label class="label">Email: </label> -->
-                                    <input class="input--style-4" type="email" name="email" id="email" placeholder="Email : ">
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <!-- <label class="label">Phone Number: </label> -->
-                                    <input class="input--style-4" type="text" name="phone" id="phone" placeholder="Phone Number : ">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="input-group">
-                            <label class="label">Time: </label>
-                            <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="time" id="time">
-                                    <option disabled="disabled" selected="selected">Choose option</option>
-                                    <option>10:00Am - 11:00Am</option>
-                                    <option>11:00AM - 12:00Pm</option>
-                                    <option>12:00Pm - 1:00Pm</option>
-                                    <option>1:00Pm - 2:00Pm</option>
-                                    <option>2:00Pm - 3:00Pm</option>
-                                    <option>3:00Pm - 4:00Pm</option>
-                                    <option>4:00Pm - 5:00Pm</option>
-                                    <option>5:00Pm - 6:00Pm</option>
-                                </select>
-                                <div class="select-dropdown"></div>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="input-group">
-                                <!--  <label class="label">Gender</label> -->
-                                <div class="p-t-10">
-                                    <label class="radio-container m-r-45">I Agree to Call Me Using this Credentials
-                                        <input type="radio" value="Agree" checked="checked" name="call_request" id="agree">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="radio-container">I Disgree to Call Me Using this Credentials
-                                        <input type="radio" value="Disgree" name="call_request" id="disgree">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="p-t-15">
-                                    <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
-                                </div>
-                                <!-- Thankyou Message People See when they submit the form: -->
-                                <div class="thankyou_message" style="display:none;">
-                                    <h2>Thanks for contacting us!
-                                        We will get back to you soon!</h2>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Jquery JS-->
-                <script src="colorlib-booking-12/vendor/jquery/jquery.min.js"></script>
-                <!-- Vendor JS-->
-                <script src="colorlib-booking-12/vendor/select2/select2.min.js"></script>
-                <script src="colorlib-booking-12/vendor/datepicker/moment.min.js"></script>
-                <script src="colorlib-booking-12/vendor/datepicker/daterangepicker.js"></script>
-                
-                <!-- Main JS-->
-                <script src="colorlib-booking-12/js/global.js"></script>
+<body>
+	<!-- Top Bar Start -->
+	<div class="top-bar d-none d-md-block">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="top-bar-left">
+						<div class="text">
+							<i class="far fa-envelope"></i>
+							<h2>Phoenixforcounselling@gmail.com</h2>
+							<!-- <p>Mon - Fri</p> -->
+						</div>
+						<div class="text">
+							<i class="fa fa-phone-alt"></i>
+							<h2>
+								+91 96434 48705
+							</h2>
+							<p>For Appointment</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Top Bar End -->
 
-                <!-- Submit the Form to Google Using "AJAX" -->
-                <script data-cfasync="false" type="text/javascript"
-                src="form-submission-handler.js"></script>
-                
-            </body>
-            
-            </html>
-            <!-- end document-->
+	<!-- Nav Bar Start -->
+	<div class="navbar navbar-expand-lg bg-dark navbar-dark">
+		<div class="container-fluid">
+			<!-- <a href="index.html" class="navbar-brand">Ph<span>oo</span>enix </a> -->
+			<img class="logo"  src="img/logo.png">
+
+			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+				<div class="navbar-nav ml-auto">
+					<a href="index.html" class="nav-item nav-link ">Home</a>
+					<a href="about.html" class="nav-item nav-link ">Get to know me</a>
+					<a href="service.html" class="nav-item nav-link">Services</a>
+					<div class="nav-item dropdown">
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blogs</a>
+						<div class="dropdown-menu">
+							<a href="Adjusting to the new normal.html" class="dropdown-item">Adjusting to the new normal</a>
+							<a href="Learn to Unlearn and Unleash your.html" class="dropdown-item">Learn to Unlearn and Unleash your
+
+							Potential</a>
+							<a href="COVID-19 and Mental Health.html" class="dropdown-item">COVID-19 and Mental Health</a>
+							<a href="Mental Health.html" class="dropdown-item">Basics of Mental Health</a>
+							<!-- <a href="single.html" class="dropdown-item">Blog Detail</a> -->
+						</div>
+					</div>
+					<a href="Resources.html" class="nav-item nav-link">Resources</a>
+					<a href="Appaintment form.html" class="nav-item nav-link">Appointment</a>
+					<a href="contact.html" class="nav-item nav-link active">Contact</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Nav Bar End -->
+
+
+	<!-- Page Header Start -->
+	<div class="page-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2>Appointment</h2>
+				</div>
+				<div class="col-12">
+<!--                 <a href="">Home</a>
+	<a href="">Contact</a> -->
+</div>
+</div>
+</div>
+</div>
+<!-- Page Header End -->
+
+
+<!-- Contact Start -->
+<div class="contact">
+	<div class="container">
+		<div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+			<p>Get In Touch</p>
+			<h2>For Any Query</h2>
+		</div>
+		<div class="row">
+			<div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+				<div class="contact-form">
+					<!---->
+					<!-- START HERE -->
+
+
+					<form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+					action="https://script.google.com/macros/s/AKfycbyButQAt8t2Q3cG6L2gbQFIxjvpMP4MdWIrTuUiwQcGvvBm2kth0VHYeGnUKhY13KN9/exec">
+					<!-- change the form action to your script url -->
+
+					<div class="control-group text-center">
+							<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<input class="input--style-4" type="text" name="name" id="name" placeholder="Name  " required>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<input class="input--style-4 js-datepicker" type="date" name="date" id="date" placeholder="Date  " required>
+										</div>
+									</div>
+								</div>
+
+							<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<input class="input--style-4" type="email" name="email" id="email" placeholder="Email  ">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<input class="input--style-4" type="text" name="phone" id="phone" placeholder="Phone Number  ">
+										</div>
+									</div>
+								</div>
+
+						<div class="form-group">
+									<select name="time" id="time">
+										<option disabled="disabled" selected="selected">Choose Time</option>
+										<option>10:00Am - 11:00Am</option>
+										<option>11:00AM - 12:00Pm</option>
+										<option>12:00Pm - 1:00Pm</option>
+										<option>1:00Pm - 2:00Pm</option>
+										<option>2:00Pm - 3:00Pm</option>
+										<option>3:00Pm - 4:00Pm</option>
+										<option>4:00Pm - 5:00Pm</option>
+										<option>5:00Pm - 6:00Pm</option>
+									</select>
+								</div>	
+						<div class="form-group">
+
+							<input type="radio" value="Agree" checked="checked" name="call_request" id="agree">
+							<label class="radio-container m-r-45">I Agree to Call Me Using this Credentials 
+							</label>
+
+						</div>
+						<div class="form-group">
+
+							<input type="radio" value="Disgree" name="call_request" id="disgree">
+							<label class="radio-container">I Disgree to Call Me Using this Credentials 
+							</label>
+						</div>						
+						<br>
+						<button class="btn" >
+						Send Message</button>
+					</div>
+
+					<!-- Thankyou Message People See when they submit the form: -->
+					<div class="thankyou_message" style="display:none;">
+						<h2>Thanks for contacting us!
+						We will get back to you soon!</h2>
+					</div>
+
+				</form>
+
+				<!-- END -->
+				<!---->
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Contact End -->
+
+
+
+<!-- Footer Start -->
+<div class="footer wow fadeIn" data-wow-delay="0.3s">
+	<div class="container-fluid">
+		<div class="container">
+			<div class="footer-info">
+				<img class="logo"  src="img/logo.png" >
+				<h3>Panvel, Navi mumbai, Maharashtra, India.</h3>
+				<div class="footer-menu">
+					<p>+91 9643448705</p>
+					<p>Phoenixforcounselling@gmail.com</p>
+				</div>
+				<div class="footer-social">
+					<a href="https://www.instagram.com/uma_maheswari_phoenix?r=nametag"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://www.facebook.com/Mrs-Uma-Maheswari-Psychological-Counselor-and-Therapist-112902650512713/"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/in/uma-maheswari-71356b52/"><i class="fab fa-linkedin-in"></i></a>
+
+				</div>
+			</div>
+		</div>
+		<div class="container copyright">
+			<div class="row">
+				<div class="col-md-6">
+					<p>&copy; <a href="http://www.timekeepers-tech.tk/">TimeKeepers.tech</a>, All Right Reserved.</p>
+				</div>
+				<div class="col-md-6">
+					<p>Designed By <a href="http://www.timekeepers-tech.tk/">Timekeepers.tech</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Footer End -->
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/isotope/isotope.pkgd.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+
+<!-- Contact Javascript File -->
+<script src="mail/jqBootstrapValidation.min.js"></script>
+<script src="mail/contact.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+
+<!-- Submit the Form to Google Using "AJAX" -->
+<script data-cfasync="false" type="text/javascript"
+src="form-submission-handler.js"></script>
+</body>
+</html>
