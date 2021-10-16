@@ -8,20 +8,20 @@
     <meta name="description" content="Colorlib Templates">
     <meta name="author" content="Colorlib">
     <meta name="keywords" content="Colorlib Templates">
-
+    
     <!-- Title Page-->
     <title>Phoenix Psychological Services</title>
-
+    
     <!-- Icons font CSS-->
     <link href="colorlib-booking-12/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
     <link href="colorlib-booking-12/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
     <!-- Font special for pages-->
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
+    
     <!-- Vendor CSS-->
     <link href="colorlib-booking-12/vendor/select2/select2.min.css" rel="stylesheet" media="all">
     <link href="colorlib-booking-12/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
-
+    
     <!-- Main CSS-->
     <link href="colorlib-booking-12/css/main.css" rel="stylesheet" media="all">
 </head>
@@ -40,16 +40,16 @@
                                     <input class="input--style-4" type="text" name="name" id="name">
                                 </div>
                             </div>
-                        <div class="row row-space">
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">Date: </label>
-                                    <div class="input-group-icon">
-                                        <input class="input--style-4 js-datepicker" type="text" name="date" id="date">
-                                        <!-- <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i> -->
+                            <div class="row row-space">
+                                <div class="col-2">
+                                    <div class="input-group">
+                                        <label class="label">Date: </label>
+                                        <div class="input-group-icon">
+                                            <input class="input--style-4 js-datepicker" type="text" name="date" id="date">
+                                            <!-- <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i> -->
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
                             </div>
                         </div>
                         <div class="row row-space">
@@ -84,38 +84,46 @@
                             </div>
                         </div>
                         <div class="col-2">
-                                <div class="input-group">
-                                   <!--  <label class="label">Gender</label> -->
-                                    <div class="p-t-10">
-                                        <label class="radio-container m-r-45">I Agree to Call Me Using this Credentials
-                                            <input type="radio" checked="checked" name="agree" id="agree">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="radio-container">I Disgree to Call Me Using this Credentials
-                                            <input type="radio" name="disgree" id="disgree">
-                                            <span class="checkmark"></span>
-                                        </label>
+                            <div class="input-group">
+                                <!--  <label class="label">Gender</label> -->
+                                <div class="p-t-10">
+                                    <label class="radio-container m-r-45">I Agree to Call Me Using this Credentials
+                                        <input type="radio" checked="checked" name="agree" id="agree">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="radio-container">I Disgree to Call Me Using this Credentials
+                                        <input type="radio" name="disgree" id="disgree">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="p-t-15">
+                                    <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+                                </div>
+                                <!-- Thankyou Message People See when they submit the form: -->
+                                <div class="thankyou_message" style="display:none;">
+                                    <h2>Thanks for contacting us!
+                                        We will get back to you soon!</h2>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
-                        <div class="p-t-15">
-                            <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Jquery JS-->
-    <script src="colorlib-booking-12/vendor/jquery/jquery.min.js"></script>
-    <!-- Vendor JS-->
-    <script src="colorlib-booking-12/vendor/select2/select2.min.js"></script>
-    <script src="colorlib-booking-12/vendor/datepicker/moment.min.js"></script>
-    <script src="colorlib-booking-12/vendor/datepicker/daterangepicker.js"></script>
-
-    <!-- Main JS-->
-    <script src="colorlib-booking-12/js/global.js"></script>
-
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
-
-</html>
-<!-- end document-->
+                
+                <!-- Jquery JS-->
+                <script src="colorlib-booking-12/vendor/jquery/jquery.min.js"></script>
+                <!-- Vendor JS-->
+                <script src="colorlib-booking-12/vendor/select2/select2.min.js"></script>
+                <script src="colorlib-booking-12/vendor/datepicker/moment.min.js"></script>
+                <script src="colorlib-booking-12/vendor/datepicker/daterangepicker.js"></script>
+                
+                <!-- Main JS-->
+                <script src="colorlib-booking-12/js/global.js"></script>
+                <!-- Submit the Form to Google Using "AJAX" -->
+                <script data-cfasync="false" type="text/javascript"
+                src="form-submission-handler.js"></script>
+                
+            </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+            
+            </html>
+            <!-- end document-->
