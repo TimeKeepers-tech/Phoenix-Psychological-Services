@@ -145,7 +145,7 @@ Potential</a>
 <!-- START HERE -->
 
 
-  <form name="formu1" class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+  <form id="myForm" class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
   action="https://script.google.com/macros/s/AKfycbz74BFTi1Yo5jIJf-LoYCl72h6JoTZz43GNLBcccZosq6-V46GK0v6VqN4WEaZhm-Cn/exec">
     <!-- change the form action to your script url -->
 
@@ -173,8 +173,8 @@ Potential</a>
         required placeholder="example@email.com"/>
       </fieldset>
         <br>
-      <button onclick="submit_form();" type="submit" class="btn" >
-        Send Message</button>
+      <input onclick="submit_form();" type="submit" class="btn" >
+        Send Message</input>
     </div>
 
     <!-- Thankyou Message People See when they submit the form: -->
@@ -252,8 +252,7 @@ Potential</a>
   src="form-submission-handler.js"></script>
 <script>
 function submit_form() {
-document.formu1.submit();
-document.formu1.reset(); 
+document.getElementById("myForm").reset()
 }
 </script>
     </body>
