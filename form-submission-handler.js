@@ -93,8 +93,8 @@
           var thankYouMessage = form.querySelector(".thankyou_message");
           if (thankYouMessage) {
             thankYouMessage.style.display = "block";
-            document.getElementById("myForm").reset()
-
+            document.getElementById("myForm").reset();
+            console.log("Contact Form Rest Success");
           }
           return;
       };
