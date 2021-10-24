@@ -93,6 +93,8 @@
           var thankYouMessage = form.querySelector(".thankyou_message");
           if (thankYouMessage) {
             thankYouMessage.style.display = "block";
+            document.getElementById("myForm").reset()
+
           }
           return;
       };
